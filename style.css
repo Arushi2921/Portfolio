@@ -1,0 +1,217 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:"Inter",sans-serif;
+line-height:1.6;
+color:#111;
+background:#ffffff;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+position:sticky;
+top:0;
+background:rgba(255,255,255,0.9);
+backdrop-filter:blur(10px);
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+font-weight:700;
+font-size:18px;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:black;
+font-weight:500;
+}
+
+nav a:hover{
+color:#6c63ff;
+}
+
+/* HERO */
+
+.hero{
+padding:140px 10%;
+background:linear-gradient(135deg,#f6f8ff,#e8ecff);
+}
+
+.hero h1{
+font-size:56px;
+font-weight:700;
+}
+
+.hero p{
+margin-top:20px;
+max-width:600px;
+font-size:18px;
+color:#555;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:12px 25px;
+background:#6c63ff;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+}
+
+.btn:hover{
+background:#574fd6;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 10%;
+animation:fadeIn 1s ease;
+}
+
+h2{
+font-size:32px;
+margin-bottom:20px;
+}
+
+/* PROJECTS */
+
+#projects{
+background:#f4f6ff;
+}
+
+.projects-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project{
+padding:20px;
+border-radius:12px;
+background:white;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.2s;
+}
+
+.project:hover{
+transform:translateY(-6px);
+}
+
+.project a{
+text-decoration:none;
+color:#111;
+}
+
+.project a:hover{
+color:#6c63ff;
+}
+
+/* SKILLS */
+
+#skills{
+background:#f5fff7;
+}
+
+.skills-grid{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.skills-grid div{
+padding:10px 18px;
+background:#f4f4f4;
+border-radius:20px;
+font-weight:500;
+transition:0.2s;
+}
+
+.skills-grid div:hover{
+background:#6c63ff;
+color:white;
+}
+
+/* CONTACT */
+
+#contact{
+background:#fff6ff;
+}
+
+.links{
+margin-top:15px;
+}
+
+.links a{
+margin-right:20px;
+text-decoration:none;
+font-weight:600;
+color:#6c63ff;
+}
+
+.links a:hover{
+text-decoration:underline;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+color:#777;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+}
