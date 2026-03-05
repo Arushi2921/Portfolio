@@ -15,7 +15,7 @@ color:#111;
 background:#ffffff;
 }
 
-/* NAVBAR */
+
 
 nav{
 display:flex;
@@ -50,7 +50,7 @@ nav a:hover{
 color:#6c63ff;
 }
 
-/* HERO */
+
 
 .hero{
 padding:140px 10%;
@@ -69,7 +69,7 @@ font-size:18px;
 color:#555;
 }
 
-/* BUTTON */
+
 
 .btn{
 display:inline-block;
@@ -86,7 +86,7 @@ font-weight:600;
 background:#574fd6;
 }
 
-/* SECTIONS */
+
 
 section{
 padding:80px 10%;
@@ -98,7 +98,6 @@ font-size:32px;
 margin-bottom:20px;
 }
 
-/* PROJECTS */
 
 #projects{
 background:#f4f6ff;
@@ -131,7 +130,6 @@ color:#111;
 color:#6c63ff;
 }
 
-/* SKILLS */
 
 #skills{
 background:#f5fff7;
@@ -152,11 +150,10 @@ transition:0.2s;
 }
 
 .skills-grid div:hover{
-background:#6c63ff;
+background:#8a84ef;
 color:white;
 }
 
-/* CONTACT */
 
 #contact{
 background:#fff6ff;
@@ -177,7 +174,7 @@ color:#6c63ff;
 text-decoration:underline;
 }
 
-/* FOOTER */
+
 
 footer{
 text-align:center;
@@ -185,7 +182,7 @@ padding:40px;
 color:#777;
 }
 
-/* ANIMATION */
+
 
 @keyframes fadeIn{
 
@@ -201,7 +198,7 @@ transform:translateY(0);
 
 }
 
-/* RESPONSIVE */
+
 
 @media(max-width:768px){
 
@@ -213,5 +210,6 @@ nav{
 flex-direction:column;
 gap:10px;
 }
+
 
 }
